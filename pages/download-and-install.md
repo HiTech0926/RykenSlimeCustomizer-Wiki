@@ -6,7 +6,7 @@ HiMCBBS: <https://www.himcbbs.com/resources/10/>
 
 Guizhan Builds: <https://builds.guizhanss.com/SlimefunReloadingProject/RykenSlimeCustomizer/main>
 
-Github: <https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/>
+Github Releases: <https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/releases>
 
 #### 安装 <a href="#an-zhuang" id="an-zhuang"></a>
 
