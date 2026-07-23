@@ -10,7 +10,7 @@
 - 拥有独特的脚本功能使可自定义范围更广，将局限性降至最低
 - 插件作者：lijinhong11
 
-[GitHub](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer)
+[GitHub](https://github.com/balugaq/RykenSlimeCustomizer)
 [开始使用](README)
 
 

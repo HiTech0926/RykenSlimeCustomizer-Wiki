@@ -54,7 +54,7 @@ function tick(info) {
 
 |字段|类型|描述|
 |--|---|--|
-|info|[SmallerMachineInfo](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java)(无电机器) \| [MachineInfo]()(能源机器) |能获取机器当前状态和机器的实例等|
+|info|[SmallerMachineInfo](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java)(无电机器) \| [MachineInfo]()(能源机器) |能获取机器当前状态和机器的实例等|
 
 ## 对于无电机器
 

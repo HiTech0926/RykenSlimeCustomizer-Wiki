@@ -58,7 +58,7 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 
 ## 注意事项
 
-1、如果您设置了脚本文件，那么当计算粘液刻时会调用`function tick(info)`，传参是[**MachineInfo**](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/MachineInfo.java)(无电机器是[**SmallerMachineInfo**](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java))
+1、如果您设置了脚本文件，那么当计算粘液刻时会调用`function tick(info)`，传参是[**MachineInfo**](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/MachineInfo.java)(无电机器是[**SmallerMachineInfo**](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java))
 
 2、work为无电机器专属标签，如果设置了对应的脚本文件，你可以获取`working`对象(检查是否处于工作)，并且通过`setWorking(布尔值)`设置机器工作状态，若点击一次工作按钮则`working=true`
 
