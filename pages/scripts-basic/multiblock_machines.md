@@ -16,5 +16,5 @@ function onWork(player, block) {
 
 |字段|类型|描述|
 |--|---|--|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|点击此多方块的玩家|
-|block|[Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)|玩家点击的方块|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|点击此多方块的玩家|
+|block|[Block](https://jd.papermc.io/paper/26.2/org/bukkit/block/Block.html)|玩家点击的方块|

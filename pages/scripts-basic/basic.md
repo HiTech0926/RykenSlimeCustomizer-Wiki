@@ -2,9 +2,9 @@
 
 这里列出所有脚本中可以方便使用的方法/字段
 
-## [server](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Bukkit.html)
+## [getServer](https://jd.papermc.io/paper/26.2/org/bukkit/Server.html)
 
-一个字段，用于获取服务器实例
+一个方法，用于获取服务器实例
 
 ## isPluginLoaded
 
@@ -162,8 +162,8 @@ let isItemMatch = isItemSimilar(itemStack, sfItem, checkLore);
 
 |入参名称|类型|说明|
 |---|---|---|
-|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|要对比的物品|
-|sfItem|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|对比样本，通常为粘液物品|
+|itemStack|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|要对比的物品|
+|sfItem|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|对比样本，通常为粘液物品|
 |checkLore|boolean|是否检查物品lore|
 
 ## isRadioactiveItem
@@ -200,8 +200,8 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 
 |入参名称|类型|说明|
 |---|---|---|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|玩家|
-|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|目标物品|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|玩家|
+|itemStack|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
 
 ## getChatInput
@@ -260,7 +260,7 @@ function onUse(event) {
 
 |入参名称|类型|说明|
 |---|---|---|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|玩家|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|玩家|
 |consumer| [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<String> | 一个函数式接口，用于处理玩家输入的文字。当玩家在聊天栏内输入文字后，该接口的 `accept` 方法会被调用，并将输入的文字作为参数传递 |
 
 ## setData
@@ -277,7 +277,7 @@ setData(blockLocation, key, value)
 
 |入参名称|类型|说明|
 |---|---|---|
-|blockLocation|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|方块位置|
+|blockLocation|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|方块位置|
 |key|String|键|
 |value|String|值|
 
@@ -295,7 +295,7 @@ let value = getData(blockLocation, key)
 
 |入参名称|类型|说明|
 |---|---|---|
-|blockLocation|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|方块位置|
+|blockLocation|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|方块位置|
 |key|String|键|
 
 ## randint（随机数）
@@ -423,11 +423,11 @@ NBTAPI.readEntity(entity)
 
 |入参名称|类型|说明|
 |---|---|---|
-|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|物品|
+|itemStack|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|物品|
 |parent|NBTCompound|NBT复合|
 |name|String|字符串|
-|block|[Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)|方块|
-|entity|[Entity](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html)|实体|
+|block|[Block](https://jd.papermc.io/paper/26.2/org/bukkit/block/Block.html)|方块|
+|entity|[Entity](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html)|实体|
 
 # 附属配置文件
 
@@ -445,5 +445,5 @@ let isSomethingEnabled = config.getBoolean("isSomethingEnabled", true);
 let theStringValue = config.getString("stringValue");
 ```
 
-`getAddonConfig();`返回的类型是[YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html)。  
+`getAddonConfig();`返回的类型是[YamlConfiguration](https://jd.papermc.io/paper/26.2/org/bukkit/configuration/file/YamlConfiguration.html)。  
 若想知道更多方法，请点击上面的链接

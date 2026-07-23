@@ -16,7 +16,7 @@ function onPlace(event) {
 
 |字段|类型|描述|
 |--|---|--|
-|event|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPlaceEvent.html)|方块被放置事件|
+|event|[BlockPlaceEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BlockPlaceEvent.html)|方块被放置事件|
 
 ## onBreak
 
@@ -34,8 +34,8 @@ function onBreak(event, itemStack, drops) {
 
 |字段|类型|描述|
 |--|---|--|
-|event|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html)|方块被破坏事件|
-|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|貌似是方块的物品形式或者是拿来破坏方块的物品|
+|event|[BlockPlaceEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BlockBreakEvent.html)|方块被破坏事件|
+|itemStack|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|貌似是方块的物品形式或者是拿来破坏方块的物品|
 |drops|[List](https://doc.qzxdp.cn/jdk/17/zh/api/java.base/java/util/List.html)<ItemStack\>|掉落物|
 
 ## tick
@@ -54,7 +54,7 @@ function tick(info) {
 
 |字段|类型|描述|
 |--|---|--|
-|info|[SmallerMachineInfo](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java)(无电机器) \| [MachineInfo]()(能源机器) |能获取机器当前状态和机器的实例等|
+|info|[SmallerMachineInfo](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/machine/SmallerMachineInfo.java)(无电机器) \| [MachineInfo]()(能源机器) |能获取机器当前状态和机器的实例等|
 
 ## 对于无电机器
 

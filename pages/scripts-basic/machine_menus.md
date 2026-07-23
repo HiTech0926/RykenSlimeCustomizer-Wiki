@@ -16,7 +16,7 @@ function onOpen(player) {
 
 |字段|类型|描述|
 |--|---|--|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|打开此菜单的玩家|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|打开此菜单的玩家|
 
 ## onClose
 
@@ -34,7 +34,7 @@ function onClose(player) {
 
 |字段|类型|描述|
 |--|---|--|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|关闭此菜单的玩家|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|关闭此菜单的玩家|
 
 ## onClick
 
@@ -52,9 +52,9 @@ function onClick(player, slot, slotItem, clickAction){
 
 |字段|类型|描述|
 |--|---|--|
-|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|点击此菜单的玩家|
+|player|[Player](https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html)|点击此菜单的玩家|
 |slot|int|被点击的槽位|
-|slotItem|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|被点击的物品|
+|slotItem|[ItemStack](https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html)|被点击的物品|
 |clickAction|[ClickAction](https://slimefun.github.io/javadocs/Slimefun4/docs/me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/ClickAction.html)|点击操作|
 
 ### 关于clickAction

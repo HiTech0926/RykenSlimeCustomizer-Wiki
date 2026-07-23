@@ -84,6 +84,14 @@
 
 存放附属的强配方机器。
 
+### super_multi_block_machines.yml  <a href="#super_multi_block_machines.yml" id="super_multi_block_machines.yml"></a>
+
+存放附属的超大多方块机器。
+
+### generations.yml <a href="#generations.yml" id="generations.yml"></a>
+
+存放附属的自然生成。
+
 ### researches.yml <a href="#researches.yml" id="researches.yml"></a>
 
 存放附属的研究。
