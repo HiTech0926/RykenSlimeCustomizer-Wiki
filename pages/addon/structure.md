@@ -31,6 +31,8 @@ addons
         │  template_machines.yml
         │  workbenches.yml
         │  linked_recipe_machines.yml
+        |  generations.yml
+        |  super_multi_block_machines.yml
         │
         ├─saveditems
         │   │  example_saveditem1.yml
