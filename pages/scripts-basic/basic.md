@@ -2,9 +2,9 @@
 
 这里列出所有脚本中可以方便使用的方法/字段
 
-## [server](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Bukkit.html)
+## [getServer](https://jd.papermc.io/paper/26.2/org/bukkit/Server.html)
 
-一个字段，用于获取服务器实例
+一个方法，用于获取服务器实例
 
 ## isPluginLoaded
 
