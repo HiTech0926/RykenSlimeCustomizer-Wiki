@@ -29,4 +29,4 @@ function onConfigReload(config) {
 }
 
 ```
-config这个入参是指附属的配置文件，类型为[YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html)
+config这个入参是指附属的配置文件，类型为[YamlConfiguration](https://jd.papermc.io/paper/26.2/org/bukkit/configuration/file/YamlConfiguration.html)

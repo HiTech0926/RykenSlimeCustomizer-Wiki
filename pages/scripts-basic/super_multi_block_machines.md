@@ -35,7 +35,7 @@ function onTick(block, machine, ctx) {
 
 |字段|类型|描述|
 |--|---|--|
-|block|[Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)|多方块机器的核心方块|
+|block|[Block](https://jd.papermc.io/paper/26.2/org/bukkit/block/Block.html)|多方块机器的核心方块|
 |machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 |ctx|[TickContext](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java#L103)|脚本上下文，用于控制默认调用|
 
@@ -91,7 +91,7 @@ function onInteract(event, machine) {
 
 |字段|类型|描述|
 |--|---|--|
-|event|[PlayerInteractEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractEvent.html)|玩家交互事件|
+|event|[PlayerInteractEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerInteractEvent.html)|玩家交互事件|
 |machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## isOfPart
@@ -110,7 +110,7 @@ function isOfPart(location, multiblock) {
 
 |字段|类型|描述|
 |--|---|--|
-|location|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|要检查的位置|
+|location|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|要检查的位置|
 |multiblock|[SuperMultiBlock](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/super_multiblock/SuperMultiBlock.java)|超大多方块实例|
 
 ### 返回值
@@ -135,5 +135,5 @@ function cannotStartSuperMultiBlock(location, machine) {
 
 |字段|类型|描述|
 |--|---|--|
-|location|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|多方块机器核心的位置|
+|location|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|多方块机器核心的位置|
 |machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
