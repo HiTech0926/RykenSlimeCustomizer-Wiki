@@ -22,6 +22,7 @@ OBJECT_FOR_REGISTER_2:
        - "version >= 1.18.1"
        - "itemexist EXAMPLE_ITEM"
     unfinished: false
+    logitech_stackable: true
 ```
 
 | 内容 | 描述 |
@@ -32,6 +33,7 @@ OBJECT_FOR_REGISTER_2:
 | register.warn | 当不满足内容注册条件时发出警告。 |
 | register.conditions | 详见**关于 conditions**。 |
 | register.unfinished | 设置当前内容是否未完成，如果内容未完成会直接跳过加载。 |
+| register.logitech_stackable | 设置机器是否能在逻辑工艺-堆叠机器/生成器中被堆叠 |
 
 ## 关于 id_alias
 

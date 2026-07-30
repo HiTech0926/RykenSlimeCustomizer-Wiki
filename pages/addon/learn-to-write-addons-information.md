@@ -14,7 +14,7 @@ version: "1.0"
 description: "RSC示例附属"
 authors: ["mmmjjkx"]
 repo: "SlimefunReloadingProject/rsc-example"
-idPattern: EXAMPLE_%0
+idPattern: EXAMPLE_%0 # 此配置可能会导致附属加载失败，谨慎使用
 loadStartTexts:
 - "===="
 - "Example附属 开始加载"
