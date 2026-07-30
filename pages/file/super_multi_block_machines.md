@@ -36,6 +36,11 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
   output: [24, 25]
 
   displayProjectiles: true
+  checkFormed: true
+  openMenuWhenClickedParts: true
+  noMenuWhenNotFormed: true
+  allowSwitchDisplayLayer: true
+  defaultNotice: true
 
   structure:
     -
@@ -54,7 +59,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
   mapping:
     o:
       material_type: slimefun
-      material: RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE
+      material: RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE # 引用自身
       core: true
 
     a1:
@@ -103,11 +108,16 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称。 | |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** | |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** | |
-| displayProjectiles | 是否显示投射物效果。 | |
+| displayProjectiles | 是否显示方块投影。默认 `true` | |
+| checkFormed | 机器tick是否需要检测是否搭建完成。默认 `true` | |
+| openMenuWhenClickedParts | 点击机器部件时是否同样打开核心菜单。默认 `true` | |
+| noMenuWhenNotFormed | 结构未形成时是否禁止打开菜单。默认 `true` | |
+| allowSwitchDisplayLayer | 是否允许切换方块投影显示层。默认 `true` | |
+| defaultNotice | 是否显示默认提示信息。默认 `true` | |
 | \*structure | 多方块机器的3D结构布局，每一层为一个列表，每一行用字符串表示，每个字符代表一个方块位置。其中，若干个 "_" 组成的字符串表示空位 | |
 | \*mapping | 结构中字符到方块的映射，定义每个字符代表的方块类型。 | |
 | mapping.#.material_type | 方块材质类型，支持`mc`(原版物品)、`slimefun`(粘液物品)、`custom`(脚本检测)。 | |
-| mapping.#.material | 方块显示材质/方块显示数据。 | |
+| mapping.#.material | 方块显示材质/投影显示数据。 | |
 | mapping.#.core | 是否为核心方块，标记为`true`的方块是机器的核心，放置该方块后检测结构。 | |
 | recipes.#.seconds | 合成所需时间，最大为 2147483647。 **实际合成时间(单位：粘液刻)：(秒数×2) / 机器运行速度** | |
 | recipes.#.input | 合成所需的输入物品。 | |
@@ -127,9 +137,9 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 
 1. **分层结构**：每一个外层列表项代表一层，从上到下排列
 2. **每行表示**：每层中的每个字符串代表一行
-3. **字符映射**：字符串中的每个字符（或字符组合）对应`mapping`中定义的方块类型
-4. **空格分隔**：每个字符或字符组合之间用空格分隔，如`"a1 b1 c1"`表示一行有三个方块，分别对应`a1`、`b1`、`c1`
-5. **空位置**：使用`__`表示空位置，不放置任何方块
+3. **字符映射**：每行中以空格分隔的每个字符串对应`mapping`中定义的方块类型
+4. **空格分隔**：每个方块表示之间用空格分隔，如`"a1 b1 c1"`表示一行有三个方块，分别对应`a1`、`b1`、`c1`
+5. **空位置**：使用若干个`_`表示空位置，不放置任何方块
 
 ### 映射配置说明
 
@@ -137,10 +147,10 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 
 1. **核心方块**：必须有且仅有一个方块标记为`core: true`，这个方块是机器的核心，玩家放置该方块后会自动检测周围结构是否匹配
 2. **材质类型**：
-   - `mc`：使用Minecraft原版方块，材质名使用方块ID（如`IRON_BLOCK`）或完整路径（如`minecraft:iron_block`）
-   - `slimefun`：使用粘液科技物品，材质名使用粘液科技物品ID
-   - `custom`：使用自定义物品，材质名使用完整的物品路径（如`minecraft:stone`），适用于需要指定具体方块状态的情况
-3. **方块状态**：可以使用方块状态，如`minecraft:furnace[lit=true]`，适用于`mc`和`custom`材质类型
+   - `mc`：使用原版方块
+   - `slimefun`：使用粘液科技方块
+   - `custom`：使用自定义脚本检测
+3. **投影显示数据**：可以使用方块数据 (如`minecraft:furnace[lit=true]`) 或 方块ID (`iron_block`), 适用于`mc`和`custom`材质类型
 
 ### 工作原理
 
