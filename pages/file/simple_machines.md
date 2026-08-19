@@ -58,6 +58,7 @@ RSC_EX_ADVANCED_GOLD_PAN:
 | \*settings.speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置机器的配方。详见[**配方**](format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 |
 
 ## 注意事项
 1、关于简单机器类型(type)

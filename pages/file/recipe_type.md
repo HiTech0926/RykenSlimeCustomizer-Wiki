@@ -13,17 +13,19 @@ RSC_EXAMPLE_RECIPE_TYPE:
 RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE:
   name: "&b示例多方块机器"
   material: CRAFTING_TABLE
+  bind-to-multiblock: RSC_EXAMPLE_MULTIBLOCK_MACHINE
 ```
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
 | \*`RSC_EXAMPLE_RECIPE_TYPE` | 配方类型的ID。<br>该ID不能与任何其他配方类型的ID相同!（其它情况下见`特别注意`） | **仅支持大写字母、数字、下划线!** |
-| \*material | 原版物品 | CRAFTING_TABLE |
-| \*name | 配方类型的名称| "&b示例多方块机器" |
+| \*material | 原版物品 | CRAFTING_TABLE | |
+| \*name | 配方类型的名称| "&b示例多方块机器" | |
+| bind-to-multiblock | 绑定的多方块机器ID，绑定后，在其他地方使用此配方类型，会自动将配方写入对应的多方块机器工作配方中 | |
 
 在此基础上，你可以自行添加`modelId`、`lore`、`glow`等标签，详见[通用物品格式](format/universal-item-format.md)。
 
-此处的配方类型ID可直接用于recipe_type的引用。
+此处的配方类型 ID 可直接用于 recipe_type 的引用。
 
 ## 特别注意
 
@@ -117,5 +119,3 @@ NULL                    # 无配方
 
 - INFINITY_FORGE <u>无尽工作台</u>
 - TINKERS_WORKBENCH <u>匠魂工作台</u>
-
-上述两种配方类型仅支持九宫格，不支持多乘多的合成配方

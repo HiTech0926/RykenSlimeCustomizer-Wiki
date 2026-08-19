@@ -89,12 +89,12 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | recipe | 设置模板机器的合成配方。详见[**配方**](../format/recipe.md) |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
-| \*consumption | 模板机器每粘液刻消耗的电量。 |
-| \*capacity | 设置模板机器可储存的能量，最大为 2147483647。 |
+| consumption | 模板机器每粘液刻消耗的电量。 |
+| capacity | 设置模板机器可储存的能量，最大为 2147483647。 |
 | \*templateSlot | 设置模版的槽位，此槽位必须是input槽位的其中一个 |
-| \*recipes | 模板机器的自定义配方。 |
-| \*recipes."sfid" | 在第一缩进中需要填写识别物的粘液id，识别物只能是粘液物品 |
-| \*recipes."sfid".# | 在第二缩进中填写工作配方，同[配方机器](file/recipes_machines.md)，在模板槽的物品与第一缩进的粘液id相同时，便会进入此缩进进行工作配方的匹配 |
+| recipes | 模板机器的自定义配方。 |
+| recipes."sfid" | 在第一缩进中需要填写识别物的粘液id，识别物只能是粘液物品 |
+| recipes."sfid".# | 在第二缩进中填写工作配方，同[配方机器](file/recipes_machines.md)，在模板槽的物品与第一缩进的粘液id相同时，便会进入此缩进进行工作配方的匹配 |
 | recipes.#.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行得更快，默认 false |
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |

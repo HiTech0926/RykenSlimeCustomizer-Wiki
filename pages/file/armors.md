@@ -62,13 +62,13 @@ rsc_example_armor:
 | protection_types | 保护类型，详见下文 |
 | \*helmet/chestplate/leggings/boots | 头盔/胸甲/护腿/靴子，遵循[通用物品格式](format/universal-item-format.md) |
 | potion_effects | 穿上盔甲时给予的药水效果格式为 药水效果ID + 药水等级 **(数字+1)级** |
-| recipe等 | 遵循[通用物品格式](format/universal-item-format.md) |
+| recipe 等 | 遵循[通用物品格式](format/universal-item-format.md) |
 
 ## 有关potion_effects
 
 potion_effects的id改动较多，需要根据服务器的我的世界版本自行调整
 
-以下列出受过更改的药水效果id，可通过使用rsc的[注册选项](file/context-options.md)功能来适配不同我的世界版本的盔甲
+以下列出部分受过更改的药水效果id，可通过使用rsc的[注册选项](file/context-options.md)功能来适配不同我的世界版本的盔甲
 
 | 药水名称 | 1.20.5之前的id | 1.20.5之后的id |
 | --- | ----------- | ----------------- |
