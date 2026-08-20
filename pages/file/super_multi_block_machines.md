@@ -103,7 +103,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | recipe_type | 见[配方类型](file/recipe_type.md)。 | |
 | recipe | 设置机器的合成配方。详见[**配方**](../format/recipe.md) | |
 | recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
-| capacity | 设置机器可储存的能量，最大为 2147483647。 | |
+| capacity | 设置机器可储存的能量，最大为 2147483647。设置为 0 时，机器为不耗电机器！ | |
 | energyPerCraft | 机器每粘液刻消耗的电量。 | |
 | speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
 | hideAllRecipes | 隐藏所有输入输出配方。 | |
