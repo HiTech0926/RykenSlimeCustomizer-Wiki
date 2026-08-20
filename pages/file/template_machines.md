@@ -101,6 +101,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |
 | recipes.#.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 |
 | script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
+| recipes_import_from | 从指定的机器中导入所有配方 | 指定的机器的粘液 ID (限当前 yml) |
 
 # 注意
 

@@ -133,6 +133,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | recipes.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 | |
 | recipes.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 | |
 | script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
+| recipes_import_from | 从指定的机器中导入所有配方 | 指定的机器的粘液 ID (限当前 yml) |
 
 ## 注意事项
 
