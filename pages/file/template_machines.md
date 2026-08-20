@@ -87,6 +87,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置模板机器的合成配方。详见[**配方**](../format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | consumption | 模板机器每粘液刻消耗的电量。 |
@@ -99,6 +100,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行得更快，默认 false |
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |
 | recipes.#.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
 
 # 注意
 

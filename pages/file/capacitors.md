@@ -31,4 +31,4 @@ RSC_EXAMPLE_CAPACITOR:
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | \*capacity | 电容可储存的能量，最大为 2147483647。 |
 | recipe | 设置电容的配方。详见[**配方**](format/recipe.md) |
-| recipeOutput | 设置合成配方的输出物品 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |

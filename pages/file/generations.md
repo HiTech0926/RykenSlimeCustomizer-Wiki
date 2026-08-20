@@ -33,7 +33,7 @@ EXAMPLE_GENERATION:
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
 | \*`EXAMPLE_GENERATION` | 自然生成的ID。<br>该ID不能与任何其他物品的ID相同!注意：此ID并非是物品ID!! | **仅支持大写字母、数字、下划线!** |
-| slimefun_id | 粘液科技方块物品的id，可以是其它附属的id，也可以是自己在items/geo/mob_drops等配置中自定义的物品(物品必须为方块或头颅) |
+| \*slimefun_id | 粘液科技方块物品的id，可以是其它附属的id，也可以是自己在items/geo/mob_drops等配置中自定义的物品(物品必须为方块或头颅) |
 | areas | 可供方块生成的多个区域 |
 | maxHeight | 最大生成高度，不可以小于minHeight |
 | minHeight | 最小生成高度，不可以大于maxHeight |

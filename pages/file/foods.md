@@ -52,9 +52,9 @@ RSC_EXAMPLE_JUICE:
 | \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
-| recipeOutput | 设置合成配方的输出物品 |
-| \*script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
 | recipe | 设置物品的配方。详见[**配方**](format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
+| \*script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
 
 ## 高级自定义食物
 

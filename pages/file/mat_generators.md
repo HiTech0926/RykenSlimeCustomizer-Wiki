@@ -39,10 +39,11 @@ RSC_EXAMPLE_MATERIAL_GENERATOR:
 | \*capacity | 机器可储存的能量，最大为 2147483647，设置为0则是不可充电的机器。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置材料发生器的配方。详见[**配方**](format/recipe.md) |
-| recipeOutput | 设置合成配方的输出物品 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | outputItem | 详见[通用物品格式](format/universal-item-format.md), 不能和`outputs`共存 |
 | outputs.# | 详见[通用物品格式](format/universal-item-format.md), 不能和`outputItem`共存 |
 | \*tickRate | 每生成一次物品所需时间，最大为 2147483647。 |
-| \*status | 设置显示信息的槽位。 |
+| \*status | 设置显示进度条信息的槽位。 |
 | \*per | 每生成一次物品所耗的能量。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |

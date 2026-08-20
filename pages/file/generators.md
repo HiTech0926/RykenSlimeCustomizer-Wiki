@@ -50,7 +50,7 @@ RSC_EXAMPLE_GENERATOR:
 | \*production | 发电机的发电量，单位为粘液刻，最大为 2147483647 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置发电机的配方。详见[**配方**](format/recipe.md) |
-| recipeOutput | 设置合成配方的输出物品 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | \*fuels | 设置发电机燃料。 |

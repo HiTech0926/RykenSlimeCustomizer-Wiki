@@ -64,7 +64,7 @@ MAGIC_INFINITY_FORGE_1:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置机器的配方。详见[**配方**](../format/recipe.md) |
-| recipeOutput | 设置合成配方的输出物品 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | energyPerCraft | 机器每粘液刻消耗的电量。 |
@@ -78,3 +78,4 @@ MAGIC_INFINITY_FORGE_1:
 | recipes.#.hide | 隐藏此输入输出配方。 |
 | recipes.#.input/output.slot | 输入/输出物品对应的槽位。有效范围：0~53。 |
 | recipes.#.input.noConsume | 当设置为true时，仅单个相应槽位的物品不消耗，其它输入物品正常消耗。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |

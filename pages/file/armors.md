@@ -62,7 +62,7 @@ rsc_example_armor:
 | protection_types | 保护类型，详见下文 |
 | \*helmet/chestplate/leggings/boots | 头盔/胸甲/护腿/靴子，遵循[通用物品格式](format/universal-item-format.md) |
 | potion_effects | 穿上盔甲时给予的药水效果格式为 药水效果ID + 药水等级 **(数字+1)级** |
-| recipe 等 | 遵循[通用物品格式](format/universal-item-format.md) |
+| recipe, recipe_type, recipeOutput | 遵循[通用物品格式](format/universal-item-format.md), 参见[物品](file/items.md) |
 
 ## 有关potion_effects
 

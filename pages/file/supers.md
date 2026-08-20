@@ -29,6 +29,7 @@ RSC_EXAMPLE_SUPER_ITEM:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置继承物品的配方。详见[**配方**](format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*class | 设置继承什么物品，这里需要填写要继承的物品的完整类名 | org.example.project.ExampleClass |
 | \*args | 补全继承物品的其他构造参数 |
 | ctor | 设置用继承物品的哪个构造器，位置从0开始 | 0 |
