@@ -1,14 +1,18 @@
 # 主页 :id=home
 
+> 此 wiki 可能有部分对机器描述有误的地方，在您无法正常加载配置时，可以在 [RSC Issues](https://github.com/balugaq/RykenSlimeCustomizer/issues) 进行反馈！
+
 ## 前言
 
 相信你或多或少的听说了一个自定义粘液附属SlimeCustomizer。但是它的局限性太大了。\
 为此，我们开发了一个自定义粘液附属插件(RykenSlimeCustomizer)，且比SlimeCustomizer有更多自定义性。
 如果你学过Java、JavaScript等这类语言，你就能很快上手写更高级的机器。
 
-欢迎加入QQ群交流：[811756705 (Slimefun Reloading... Project)](https://qm.qq.com/cgi-bin/qm/qr?k=idCPgpiN5wGQwc5fcO4PPLW4UkjAmsKP)
+欢迎加入QQ群交流：
+- [811756705 (Slimefun Reloading... Project)](https://qm.qq.com/cgi-bin/qm/qr?k=idCPgpiN5wGQwc5fcO4PPLW4UkjAmsKP) (已废弃)
+- [231200497 点击链接加入群聊【Slimefun Pylon RUNRUN Project】](https://qm.qq.com/q/4yp1rahZHy)
 
-请在使用本附属前详细地阅读《使用前声明》。
+使用本附属，即默认您同意[《使用前声明》](declaration.md)，否则请立即删除此附属相关内容！
 
 ## 简介
 
@@ -60,6 +64,6 @@ Wiki贡献：
 
 以上人员按Wiki贡献大小排序排列
 
-* 插件编写：[lijinhong11](https://github.com/lijinhong11)
+* 插件编写：[lijinhong11](https://github.com/lijinhong11), [balugaq](https://github.com/balugaq)
 * Wiki搭建：[HiTech0926](https://github.com/HiTech0926)
 * 模板提供：[hth0987654](https://github.com/hth0987654)

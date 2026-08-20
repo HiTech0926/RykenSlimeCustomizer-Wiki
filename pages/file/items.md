@@ -83,7 +83,7 @@ RSC_CHANGEABLE_DIRT:
   piglin_trade_chance: 10
   drop_from: PODZOL
   drop_chance: 10
-  drop_amount: 1
+  drop_amount: 1 # 也可使用范围值， drop_amount: "3-5"
   rainbow: CUSTOM
   rainbow_materials:
     - DIRT      
@@ -190,8 +190,8 @@ GLAZED_TERRACOTTA（带釉陶瓦）
 ```
 
 设置此物品的获取方式为猪灵交易物品。
-<br>当你设置了这个选项，RSC会自动帮你补充 recipe_type:
-<br>尽管你自己设置了其他的 recipe_type
+<br>当你设置了这个选项，RSC 会自动帮你补充 recipe_type:
+<br>会忽略你设置的其他的 recipe_type
 
 ```yaml
 recipe_type: BARTER_DROP # 猪灵交易

@@ -2,6 +2,8 @@
 
 本页将对RykenSlimeCustomizer（后文简称 **rsc**）与SlimeCustomizer（后文简称 **sc**）的功能进行一个系统性的梳理，简单明了的列出 rsc 的优势，你也可以在此页找到你想要的功能
 
+> 注：在 RSC / SC 中，你可以使用中文为你的物品/机器起 ID，但这种做法不被推荐，在部分场景下会报错！
+
 ## 加载差异
 
 | 内容 | sc | rsc |
@@ -15,10 +17,13 @@
 
 自定义加载选项：详见[内容加载/注册选项](file/context-options.md)
 <br>自动更新附属：详见[编写附属信息](../addon/learn-to-write-addons-information.md)
-<br>预加载附属所有物品：在同一个附属中，你可以在 `items.yml` 内引用后面 `machines.yml` 的内容，而无需再为此大费周章使用 `saveditem`
+<br>预加载附属所有物品：在同一个附属中，你可以在 `items.yml` 内引用后面 `recipe_machines.yml` 的内容，而无需再为此大费周章使用 `saveditem`
+
 ## 配方编写类
 
 关于配方的编写，rsc可以**省略不写**无物品的配方格，而sc必须按部就班的按统一格式编写
+
+> 注：在 RSC 中，多数场景下对于配置文件的部分id大小写要求非常宽松，如 BARRIER 同样可以写成 barrier 等！
 
 ```yaml
 # 对比
@@ -64,7 +69,7 @@ sc在物品自定义方面仅提供了一个配置，自由度较小局限性较
 
 | 内容 | sc | rsc |
 | --- | ----------- | ----------- |
-| saveitem(保存物品) | ✓ | ✓ |
+| saveditem(保存物品) | ✓ | ✓ |
 | placeable（可放置物品） | ✓ | ✓ |
 | script(脚本) | ✕ | ✓ |
 | 引用头颅方块 | 仅hash | hash、url、Base64 |
@@ -91,11 +96,11 @@ rsc同样也利好于材质制作者，可以为自定义物品套上特殊的�
 | 自定义能源类型 | ✕ | ✓ |
 | 机器脚本 | ✕ | ✓ |
 
-sc中关于机器的配置仅包含`machine.yml`，且机器菜单单一，输入输出数量单一，功能单一，但是编写较为简单
+sc中关于机器的配置仅包含`machine.yml`(已废弃)，且机器菜单单一，输入输出数量单一，功能单一，但是编写较为简单
 
-rsc中关于机器的配置包含`machine.yml`（无输入输出机器，需脚本套模）、`recipe_machines.yml`（配方机器）、`simple_machines.yml`（简单机器），可自定义机器菜单，功能多样
+rsc中关于机器的配置包含`machine.yml`(已废弃)（无输入输出机器，需脚本套模）、`recipe_machines.yml`（配方机器/无电机器）、`simple_machines.yml`（简单机器），可自定义机器菜单，功能多样
 
-rsc可在`machine.yml`中通过编辑能源类型（`energy.type`），自定义能源节点等能源类型
+rsc可在`machine.yml`(已废弃)中通过编辑能源类型（`energy.type`），自定义能源节点等能源类型
 
 rsc中的`simple_machines.yml`为编写者提供简易的粘液原版机器进阶版的编写，而在sc中添加同类机器则格外繁琐，需一个个填写输入与输出物品
 
@@ -128,6 +133,12 @@ rsc可以自定义解锁研究所需要的**游戏币**，而sc不能
 继承物品是rsc特有的功能，可以通过继承物品，复制其他附属的物品或机器的机制
 
 详见[继承物品](file/supers.md)
+
+## 超大多方块机器类
+
+你可以在 RSC 中编写比原版粘液大得多的多方块结构
+
+详见[超大多方块机器](file/super_multi_block_machines.md)
 
 ## 其它功能
 

@@ -4,7 +4,7 @@
 
 HiMCBBS: <https://www.himcbbs.com/resources/10/>
 
-Guizhan Builds: <https://builds.guizhanss.com/SlimefunReloadingProject/RykenSlimeCustomizer/main>
+Guizhan Builds: <https://builds.guizhanss.com/balugaq/RykenSlimeCustomizer/main>
 
 Github Releases: <https://github.com/balugaq/RykenSlimeCustomizer/releases>
 

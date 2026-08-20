@@ -1,4 +1,4 @@
-# 超级多方块机器(super_multi_block_machines.yml)
+# 超大多方块机器(super_multi_block_machines.yml)
 
 <mark style="color:red;">**注意：**</mark>该页面由 AI 生成，经人工部分检查，若发现错误请在 issues 中提出。
 
@@ -14,7 +14,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
   item_group: rsc_example_normal_group
   item:
     material: DIAMOND_BLOCK
-    name: "&6超级多方块机器"
+    name: "&6超大多方块机器"
     lore:
       - "&7一个强大的多方块机器"
       - "&7需要特定结构才能激活"
@@ -116,6 +116,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | noMenuWhenNotFormed | 结构未形成时是否禁止打开菜单。默认 `true` | |
 | allowSwitchDisplayLayer | 是否允许切换方块投影显示层。默认 `true` | |
 | defaultNotice | 是否显示默认提示信息。默认 `true` | |
+| baseDirection | 指定放置初对多方块投影的旋转方向。默认 north | {north, east, south, west} |
 | ticker_type | 指定使用的配方读取器，默认 `recipe` | recipe (配方机器) / linked_recipe (强配方机器) / workbench (工作台) / template_recipe (模板机器) / material_generator (材料生成器) |
 | \*structure | 多方块机器的3D结构布局，每一层为一个列表，每一行用字符串表示，每个字符代表一个方块位置。其中，若干个 "_" 组成的字符串表示空位 | |
 | \*mapping | 结构中字符到方块的映射，定义每个字符代表的方块类型。 | |
