@@ -22,7 +22,7 @@
 其中：
 * `ctx` = TickContext
 * `event` = PlayerInteractEvent
-* `machine` = [CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)
+* `machine` = [CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)
 * `multiblock` = [SuperMultiBlock](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/super_multiblock/SuperMultiBlock.java)
 
 ---
@@ -44,7 +44,7 @@ function onTick(block, machine, ctx) {
 |字段|类型|描述|
 |--|---|--|
 |block|[Block](https://jd.papermc.io/paper/26.2/org/bukkit/block/Block.html)|多方块机器的核心方块|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 |ctx|[TickContext](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/TickContext)|脚本上下文，用于控制默认调用|
 
 ## onFormed
@@ -64,7 +64,7 @@ function onFormed(partLocation, machine) {
 |字段|类型|描述|
 |--|---|--|
 |partLocation|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|部件位置|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## onUnformed
 
@@ -83,7 +83,7 @@ function onUnformed(partLocation, machine) {
 |字段|类型|描述|
 |--|---|--|
 |partLocation|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|部件位置|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## onDestroy
 
@@ -101,7 +101,7 @@ function onDestroy(machine) {
 
 |字段|类型|描述|
 |--|---|--|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## onInteract
 
@@ -120,7 +120,7 @@ function onInteract(event, machine) {
 |字段|类型|描述|
 |--|---|--|
 |event|[PlayerInteractEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerInteractEvent.html)|玩家交互事件|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## isOfPart
 
@@ -164,7 +164,7 @@ function cannotStartSuperMultiBlock(location, machine) {
 |字段|类型|描述|
 |--|---|--|
 |location|[Location](https://jd.papermc.io/paper/26.2/org/bukkit/Location.html)|多方块机器核心的位置|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## onClickedPartBlock
 
@@ -183,7 +183,7 @@ function onClickedPartBlock(event, machine) {
 |字段|类型|描述|
 |--|---|--|
 |event|[PlayerInteractEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerInteractEvent.html)|玩家交互事件|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## onClickedPartBlockNotFormed
 
@@ -202,7 +202,7 @@ function onClickedPartBlockNotFormed(event, machine) {
 |字段|类型|描述|
 |--|---|--|
 |event|[PlayerInteractEvent](https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerInteractEvent.html)|玩家交互事件|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## autoSwitchedDisplayLayer
 
@@ -221,7 +221,7 @@ function autoSwitchedDisplayLayer(layer, machine) {
 |字段|类型|描述|
 |--|---|--|
 |layer|int|指定的层的y|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## switchDisplayLayer
 
@@ -240,7 +240,7 @@ function switchDisplayLayer(layerIndex, machine) {
 |字段|类型|描述|
 |--|---|--|
 |layerIndex|int|切换的层的索引，其中 `-999` 表示显示全部投影|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
 
 ## formedLayer
 
@@ -258,5 +258,5 @@ function formedLayer(layer, machine) {
 
 |字段|类型|描述|
 |--|---|--|
-|layer|int|搭建完成的层的y|
-|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/objects/customs/machine/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|
+|layer|int|搭建完成的层的y值|
+|machine|[CustomSuperMultiBlockMachine](https://github.com/balugaq/RykenSlimeCustomizer/blob/main/src/main/java/org/lins/mmmjjkx/rykenslimefuncustomizer/customs/CustomSuperMultiBlockMachine.java)|超大多方块机器的实例|

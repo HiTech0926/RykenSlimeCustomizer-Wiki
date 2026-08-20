@@ -34,6 +34,7 @@ RSC_EXAMPLE_GEO_RESOURCE:
 | \*item_group| 自然资源所在[物品组（分类）](file/groups.md)的ID。 |
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe_type | 见[配方类型](format/universal-item-format.md)。 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*max-deviation | 每个区块自然资源数量的最大偏差。 | 正整数 |
 | obtain_from_geo_miner | 设置自然资源是否可以从GEO矿机中挖到。|
 | \*geo_name | 设置自然资源的名称。 |

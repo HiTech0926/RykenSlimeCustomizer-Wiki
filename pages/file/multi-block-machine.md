@@ -18,7 +18,7 @@ RSC_EXAMPLE_MULTIBLOCK_MACHINE:
     #4 5 6
     #7 8 9
     5:
-      material: OAK_FENCE_GATE
+      material: DIAMOND_BLOCK
     #不要漏发射器
     8:
       material: DISPENSER
@@ -78,7 +78,7 @@ RSC_EXAMPLE_MULTIBLOCK_MACHINE:
 | \*recipe | 设置多方块机器的搭建方式。详见[**配方**](format/recipe.md)，搭建一个多方块机器必须包含一个发射器。 |
 | recipes.#.input | 合成输出物品的配方。 |
 | recipes.#.output | 多方块机器输出的物品。 |
-| \*work| 设置工作方块，即多方块机器合成一个物品需要右键的方块，填相应方块在recipe中的数字。 |
+| \*work | 设置工作方块，即多方块机器合成一个物品需要右键的方块，填相应方块在 recipe 中的数字。 | 由于粘液本体限制，该值只能为 {2, 5, 8} 中的一个 |
 | \*sound | 右键工作方块并成功合成物品后发出的声音，详见 [声音](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/services/sounds/SoundEffect.html) 。 |
 
 

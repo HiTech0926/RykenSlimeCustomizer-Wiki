@@ -31,14 +31,15 @@ amount: (数字)
 
 | 类型                   | 描述             |
 | -------------------- | -------------- |
-| mc (默认)            | 原版物品 |
+| mc / minecraft / vanilla (默认)            | 原版物品 |
 | skull\_base64        | 头颅物品 |
 | skull\_url           | 头颅物品 |
 | skull\_hash          | 头颅物品 |
-| slimefun             | 粘液物品 |
+| sf / slimefun             | 粘液物品 |
 | uniitem              | 外部插件物品 |
 | none                 | 无物品(材料一栏可不用填)   |
 | saveditem            | 保存的物品 |
+| built_in             | 内置物品 |
 
 ```yaml
 material_type: (材料类型)
@@ -70,11 +71,11 @@ material: http://textures.minecraft.net/texture/bb0f722aec27490cf056f560afdd457a
 material: bb0f722aec27490cf056f560afdd457a0a794e703556cc4c3b51a582f5c57aa4
 ```
 
-4、slimefun
+4、sf / slimefun
 
 当`material_type: slimefun`时，你可以在同级的情况下添加`glow`，修改`name`和`lore`，可用于在不改变物品材质的情况下，编辑一个粘液物品，可用于机器的输出项。
 
-5、mc
+5、mc / minecraft / vanilla
 
 在填写原版物品id时，你可以省略`material_type: mc`，为了让rsc附属具备更好的兼容性，rsc默认兼容了以下被修改过的原版物品id
 
@@ -115,6 +116,27 @@ material: mmoitems::MATERIAL:FLATSTONE
   - EcoArmor
 ```
 
+7. built_in
+内置物品
+
+```yaml
+material_type: built_in
+material: slimefun_guide_survival
+```
+
+支持以下物品
+
+```yaml
+  - slimefun_guide_survival # 粘液书 （生存模式）
+  - slimefun_guide_cheat # 粘液书 （作弊模式）
+  - background # 背景
+  - no_permission_item # 无权限物品
+  - not_researched # 未解锁物品
+  - input_slot_texture # 输入槽边框
+  - output_slot_texture # 输出槽边框
+  - wiki_button # Wiki 按钮
+```
+
 ### \*材料
 
 设置物品材料，填写内容由材料类型决定。
@@ -127,6 +149,12 @@ material: mmoitems::MATERIAL:FLATSTONE
 
 ```yaml
 material: <材料>
+```
+
+另外，RSC 支持使用 `|` 来分隔可能加载失败的材料
+
+```yaml
+material: grass | short_grass | scute | iron_chain | chain
 ```
 
 ### 模型ID

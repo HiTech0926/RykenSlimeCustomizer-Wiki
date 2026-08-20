@@ -64,12 +64,13 @@ MAGIC_INFINITY_FORGE_1:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置机器的配方。详见[**配方**](../format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
-| \*energyPerCraft | 机器每粘液刻消耗的电量。 |
-| \*capacity | 设置机器可储存的能量，最大为 2147483647。 |
-| \*speed | 机器运行速度，单位为粘液刻/秒。 |
-| saveAmount | 在机器中保留输入槽内物品的最终数量(便于玩家自动化输入输出)，若设置为1，则所有输入槽内的物品会始终保留1个(即输入槽内有物品数量为1时，机器不运行)。 有效范围：0~64。 |
+| energyPerCraft | 机器每粘液刻消耗的电量。 |
+| capacity | 设置机器可储存的能量，最大为 2147483647。设置为 0 时，机器为不耗电机器！ |
+| speed | 机器运行速度，单位为粘液刻/秒。 |
+| saveAmount | 在机器中保留输入槽内物品的最终数量(便于玩家自动化输入输出)，若设置为1，则所有输入槽内的物品会始终保留1个(即输入槽内有物品数量为1时，机器不运行)。默认为0 | 有效范围：0~64。 |
 | hideAllRecipes | 隐藏所有输入输出配方。 |
 | recipes.#.seconds | 合成所需时间，最大为 2147483647。 **实际合成时间(单位：粘液刻)：(秒数×2) / 机器运行速度** |
 | recipes.#.chooseOne | 当随机出多个产物的时候从中选一个作为最终产物。 |
@@ -77,3 +78,5 @@ MAGIC_INFINITY_FORGE_1:
 | recipes.#.hide | 隐藏此输入输出配方。 |
 | recipes.#.input/output.slot | 输入/输出物品对应的槽位。有效范围：0~53。 |
 | recipes.#.input.noConsume | 当设置为true时，仅单个相应槽位的物品不消耗，其它输入物品正常消耗。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
+| recipes_import_from | 从指定的机器中导入所有配方 | 指定的机器的粘液 ID (限当前 yml) |

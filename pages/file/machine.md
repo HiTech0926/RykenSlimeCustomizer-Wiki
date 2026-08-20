@@ -1,4 +1,4 @@
-# 无输入输出机器(machines.yml)
+# 无输入输出机器(machines.yml) [已废弃]
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
@@ -47,8 +47,9 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 | \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
-| script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本机器 - 机器 (已废弃)](scripts-basic/machines.md) |
 | recipe | 设置机器的配方。详见[**配方**](format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | energy | 设置机器的能源，如果没有设置这个或者加载/读取失败则自动设置为无电机器 |

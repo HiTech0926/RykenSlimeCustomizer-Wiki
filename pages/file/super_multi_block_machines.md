@@ -1,4 +1,4 @@
-# 超级多方块机器(super_multi_block_machines.yml)
+# 超大多方块机器(super_multi_block_machines.yml)
 
 <mark style="color:red;">**注意：**</mark>该页面由 AI 生成，经人工部分检查，若发现错误请在 issues 中提出。
 
@@ -14,7 +14,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
   item_group: rsc_example_normal_group
   item:
     material: DIAMOND_BLOCK
-    name: "&6超级多方块机器"
+    name: "&6超大多方块机器"
     lore:
       - "&7一个强大的多方块机器"
       - "&7需要特定结构才能激活"
@@ -41,6 +41,7 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
   noMenuWhenNotFormed: true
   allowSwitchDisplayLayer: true
   defaultNotice: true
+  ticker_type: recipe
 
   structure:
     -
@@ -101,9 +102,10 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 | |
 | recipe | 设置机器的合成配方。详见[**配方**](../format/recipe.md) | |
-| \*capacity | 设置机器可储存的能量，最大为 2147483647。 | |
-| \*energyPerCraft | 机器每粘液刻消耗的电量。 | |
-| \*speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
+| capacity | 设置机器可储存的能量，最大为 2147483647。设置为 0 时，机器为不耗电机器！ | |
+| energyPerCraft | 机器每粘液刻消耗的电量。 | |
+| speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
 | hideAllRecipes | 隐藏所有输入输出配方。 | |
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称。 | |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** | |
@@ -114,6 +116,8 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | noMenuWhenNotFormed | 结构未形成时是否禁止打开菜单。默认 `true` | |
 | allowSwitchDisplayLayer | 是否允许切换方块投影显示层。默认 `true` | |
 | defaultNotice | 是否显示默认提示信息。默认 `true` | |
+| baseDirection | 指定放置初对多方块投影的旋转方向。默认 north | {north, east, south, west} |
+| ticker_type | 指定使用的配方读取器，默认 `recipe` | recipe (配方机器) / linked_recipe (强配方机器) / workbench (工作台) / template_recipe (模板机器) / material_generator (材料生成器) |
 | \*structure | 多方块机器的3D结构布局，每一层为一个列表，每一行用字符串表示，每个字符代表一个方块位置。其中，若干个 "_" 组成的字符串表示空位 | |
 | \*mapping | 结构中字符到方块的映射，定义每个字符代表的方块类型。 | |
 | mapping.#.material_type | 方块材质类型，支持`mc`(原版物品)、`slimefun`(粘液物品)、`custom`(脚本检测)。 | |
@@ -128,6 +132,8 @@ RSC_EXAMPLE_SUPER_MULTIBLOCK_MACHINE:
 | recipes.#.hide | 隐藏此输入输出配方。 | |
 | recipes.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 | |
 | recipes.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 | |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
+| recipes_import_from | 从指定的机器中导入所有配方 | 指定的机器的粘液 ID (限当前 yml) |
 
 ## 注意事项
 

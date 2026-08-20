@@ -48,3 +48,4 @@ RSC_EXAMPLE_SOLAR_GENERATOR:
 | \*lightLevel | 光照等级，机器所处的位置在未达到相应的光照等级时不会工作，最大为15 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置太阳能发电机的配方。详见[**配方**](format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |

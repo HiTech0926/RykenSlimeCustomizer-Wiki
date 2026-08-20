@@ -83,7 +83,7 @@ RSC_CHANGEABLE_DIRT:
   piglin_trade_chance: 10
   drop_from: PODZOL
   drop_chance: 10
-  drop_amount: 1
+  drop_amount: 1 # 也可使用范围值， drop_amount: "3-5"
   rainbow: CUSTOM
   rainbow_materials:
     - DIRT      
@@ -107,6 +107,7 @@ RSC_HIDDEN_ITEM:
 | placeable | 物品是否可放置。**不要让工具等本来就无法放置的物品可放置！** |
 | lateInit | 延迟加载，即在所有物品加载完以后再加载该物品。**此条目适用于所有配置(除了info.yml)** |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称，支持使用路径，例如 **文件夹名1/文件夹名2/脚本名** |
 | recipe | 设置物品的配方。详见[**配方**](format/recipe.md) |
 | energy_capacity | 可充电物品的充电量，详见下文 |
@@ -189,8 +190,8 @@ GLAZED_TERRACOTTA（带釉陶瓦）
 ```
 
 设置此物品的获取方式为猪灵交易物品。
-<br>当你设置了这个选项，RSC会自动帮你补充 recipe_type:
-<br>尽管你自己设置了其他的 recipe_type
+<br>当你设置了这个选项，RSC 会自动帮你补充 recipe_type:
+<br>会忽略你设置的其他的 recipe_type
 
 ```yaml
 recipe_type: BARTER_DROP # 猪灵交易

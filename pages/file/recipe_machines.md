@@ -110,12 +110,13 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置机器的配方。详见[**配方**](../format/recipe.md) |
+| recipeOutput | 设置合成配方的输出物品 | [通用物品格式](format/universal-item-format.md) |
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
-| \*energyPerCraft | 机器每粘液刻消耗的电量。 |
+| energyPerCraft | 机器每粘液刻消耗的电量。 |
 | hideAllRecipes | 隐藏所有输入输出配方。 |
-| \*speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
-| \*capacity | 设置机器可储存的能量，最大为 2147483647。 |
+| speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
+| capacity | 设置机器可储存的能量，最大为 2147483647。设置为 0 时，机器为不耗电机器！ |
 | recipes.#.seconds | 合成所需时间，最大为 2147483647。 **实际合成时间(单位：粘液刻)：(秒数×2) / 机器运行速度** |
 | recipes.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | recipes.#.chooseOne | 当随机出多个产物的时候从中选一个作为最终产物，详见注意事项。 |
@@ -123,6 +124,8 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 | recipes.#.hide | 隐藏此输入输出配方。 |
 | recipes.#.output.chance | 物品产出的概率。有效范围 1~100 |
 | recipes.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 |
+| script | 机器引用的脚本，设置机器对应的脚本文件，双引号内填脚本对应的文件名称。 详见 [脚本基础 - ACM机器](scripts-basic/acm_machine.md) |
+| recipes_import_from | 从指定的机器中导入所有配方 | 指定的机器的粘液 ID (限当前 yml) |
 
 ## 注意事项
 
